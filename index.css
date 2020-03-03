@@ -1,10 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: rgb(56, 56, 56);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+.gameboard{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.action{
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: soft-light;
+}
+.wow{
+    background-image: url("https://gamepedia.cursecdn.com/wowpedia/thumb/a/af/WoW_Classic_logo.png/1200px-WoW_Classic_logo.png");
+    background-repeat: no-repeat;
+    background-size: 400px 166px;
+    height: 166px;
+    width: 400px;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 83px);
+}
 .arthas{
     background-image: url("https://images-na.ssl-images-amazon.com/images/I/71SRr%2BnhM0L._SX450_.jpg");
     background-repeat: no-repeat;
-    background-size: 80px 80px;
-    height: 80px;
-    width: 80px;
+    background-size: 150px 150px;
+    border: solid white 1px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 34.5%;
+    top: 2%;
 }
+.ilidan{
+    background-image: url('https://www.alfabetajuega.com/abj_public_files/multimedia/imagenes/201606/152480.alfabetajuega-world-of-warcraft-legion-illidan-110616.png');
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    border: solid white 2px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 34.5%;
+    top: 2%;
+}
+.thrall{
+    background-image: url('https://gamepedia.cursecdn.com/es_wowpedia/thumb/4/4a/Thrall_Wei.jpg/300px-Thrall_Wei.jpg?version=7028a4ad04e9386ef2d3b284b5e73742');
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    border: solid white 2px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+.sylvanas{
+    background-image: url('https://besthqwallpapers.com/Uploads/23-11-2019/112602/thumb2-sylvanas-windrunner-2019-games-world-of-warcraft-warriors-samuro-wow.jpg');
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    border: solid white 2px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 15%;
+    top: 20%;
+}
+.jaina{
+    background-image: url('https://gamepedia.cursecdn.com/es_wowpedia/thumb/9/93/Jaina_FX.jpg/300px-Jaina_FX.jpg?version=978ca043a78dc244728f9c292866e438');
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    border: solid white 2px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 15%;
+    bottom: 20%;
+}
+.tyrande{
+    background-image: url('https://gamepedia.cursecdn.com/wowpedia/4/47/Tyrande_HS_cropped.jpg');
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    border: solid white 2px;
+    position: absolute;
+    left: 15%;
+    bottom: 20%;
+    height: 150px;
+    width: 150px;
+}
+.medivh{
+    background-image: url('https://gamepedia.cursecdn.com/hots_es_gamepedia/thumb/d/dd/MedivhArt.jpg/240px-MedivhArt.jpg?version=ee22550545b54cd0e59d8778e4cfd9e1');
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    border: solid white 2px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 34.5%;
+    bottom: 2%;
+}
+.malfurion{
+    background-image: url('https://i.pinimg.com/originals/f0/8e/3f/f08e3f3ffc4085ef210e4340b4558b6c.jpg');
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    border: solid white 2px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 34.5%;
+    bottom: 2%;
+}
+.btn-start {
+    width: 300px;
+    height: 80px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 150px);
+  }
 .hide{
     display: none;
+}
+@media screen and (max-width: 1023px){
+    .color{
+        background-size: 100px 100px;
+        height: 100px;
+        width: 100px;
+    }
+    .logo{
+        background-size: 350px 145.25px;
+        left: calc(50% - 175px);
+        top: calc(50% - 72.625px);
+    }
+    .button{
+        width: 250px;
+        height: 70px;
+        top: calc(50% - 35px);
+        left: calc(50% - 125px);
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width: 767px){
+    .color{
+        background-size: 65px 65px;
+        height: 65px;
+        width: 65px;
+    }
+    .logo{
+        background-size: 200px 83px;
+        left: calc(50% - 100px);
+        top: calc(50% - 41.5px);
+    }
+    .button{
+        width: 200px;
+        height: 60px;
+        top: calc(50% - 30px);
+        left: calc(50% - 100px);
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+}
+@media screen and (max-width: 479px){
+    .color{
+        background-size: 50px 50px;
+        height: 50px;
+        width: 50px;
+    }
+    .logo{
+        background-size: 150px 62.25px;
+        left: calc(50% - 75px);
+        top: calc(50% - 31.125px);
+    }
+    .button{
+        width: 150px;
+        height: 50px;
+        top: calc(50% - 25px);
+        left: calc(50% - 75px);
+        font-size: 1rem;
+        border-radius: 5px;
+    }
 }

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body {
     margin: 0;
@@ -139,6 +140,8 @@ body {
     }
     .logo{
         background-size: 350px 145.25px;
+        height: 145.25px;
+        width: 350px;
         left: calc(50% - 175px);
         top: calc(50% - 72.625px);
     }
@@ -158,6 +161,8 @@ body {
     }
     .logo{
         background-size: 200px 83px;
+        height: 83px;
+        width: 200px;
         left: calc(50% - 100px);
         top: calc(50% - 41.5px);
     }
@@ -178,6 +183,8 @@ body {
     }
     .logo{
         background-size: 150px 62.25px;
+        height: 62.25px;
+        width: 250px;
         left: calc(50% - 75px);
         top: calc(50% - 31.125px);
     }
